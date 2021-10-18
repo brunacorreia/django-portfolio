@@ -55,7 +55,7 @@
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Project Detail</h1>
         <p class="lead text-muted">{{ job.summary }}</p>
-        <img src="{% static 'github-profile.jpg' %}" height=300></img>
+        <img src="{{ job.image.url }}" height=300></img>
         <p>
             <a href="{% url 'home' %}" class="btn btn-primary my-2">Return</a>
           </p>
